@@ -1,0 +1,69 @@
+# arXiv Alert Bot Configuration
+
+# Search parameters
+search:
+  # arXiv categories to monitor (list)
+  categories:
+    - cs.AI        # Artificial Intelligence
+    - cs.LG        # Machine Learning
+    - cs.CL        # Computation and Language
+    - cs.CV        # Computer Vision
+    # Add more: cs.RO (Robotics), cs.NE (Neural Networks), etc.
+  
+  # Optional: specific keywords to search for
+  keywords:
+    - "transformer"
+    - "large language model"
+    - "neural network"
+  
+  # How many days back to search
+  days_back: 1
+  
+  # Maximum results to fetch per run
+  max_results: 100
+
+# Additional filtering (optional)
+filter:
+  # Keywords that must appear in title (leave empty to disable)
+  title_keywords: []
+  
+  # Keywords that must appear in abstract (leave empty to disable)
+  abstract_keywords: []
+
+# Notification settings
+notifications:
+  # Email configuration
+  email:
+    enabled: true
+    smtp_server: smtp.gmail.com
+    smtp_port: 587
+    username: your_email@gmail.com
+    password: your_app_password  # Use App Password for Gmail
+    from_address: your_email@gmail.com
+    to_address: recipient@gmail.com
+  
+  # Slack configuration
+  slack:
+    enabled: false
+    webhook_url: https://hooks.slack.com/services/YOUR/WEBHOOK/URL
+  
+  # Custom webhook configuration
+  webhook:
+    enabled: false
+    url: https://your-webhook-endpoint.com/notify
+    headers:
+      Content-Type: application/json
+      Authorization: Bearer your_token_here
+  
+  # Retry configuration
+  retry:
+    max_attempts: 3
+
+# Database settings
+database:
+  path: arxiv_papers.db
+
+# Logging settings
+logging:
+  level: INFO  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  file: arxiv_bot.log
