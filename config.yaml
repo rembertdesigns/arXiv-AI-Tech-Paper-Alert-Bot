@@ -52,7 +52,7 @@ search:
   days_back: 1
   
   # Maximum results to fetch per run
-  max_results: 100
+  max_results: 50
 
 # Additional filtering (optional)
 filter:
