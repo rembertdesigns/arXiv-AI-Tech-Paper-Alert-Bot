@@ -8,13 +8,32 @@ search:
     - cs.LG        # Machine Learning
     - cs.CL        # Computation and Language
     - cs.CV        # Computer Vision
-    # Add more: cs.RO (Robotics), cs.NE (Neural Networks), etc.
+    - cs.RO        # Robotics
+    - cs.NE        # Neural Networks
+    - cs.PL        # Programming Languages
+    - cs.DB        # Databases
+    - cs.DC        # Distributed, Parallel, and Cluster Computing
+    - cs.GL        # Graphics
+    - cs.GR        # Computer Graphics
+    - cs.IT        # Information Retrieval
   
   # Optional: specific keywords to search for
   keywords:
     - "transformer"
     - "large language model"
     - "neural network"
+    - "graph neural network"
+    - "reinforcement learning"
+    - "deep learning"
+    - "self-supervised"
+    - "unsupervised learning"
+    - "representation learning"
+    - "out-of-distribution"
+    - "causal inference"
+    - "federated learning"
+    - "multimodal"
+    - "data augmentation"
+    - "generative model"
   
   # How many days back to search
   days_back: 1
