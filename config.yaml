@@ -16,6 +16,12 @@ search:
     - cs.GL        # Graphics
     - cs.GR        # Computer Graphics
     - cs.IT        # Information Retrieval
+    - stat.ML      # Statistics - Machine Learning
+    - eess.SP      # Electrical Engineering and Systems Science - Signal Processing
+    - cs.SY        # Systems and Control
+    - cs.DS        # Data Structures and Algorithms
+    - cs.CR        # Cryptography and Security
+    - cs.RO        # Robotics (sometimes related in cryptography/security contexts)
   
   # Optional: specific keywords to search for
   keywords:
@@ -34,6 +40,13 @@ search:
     - "multimodal"
     - "data augmentation"
     - "generative model"
+    - "cryptocurrency"
+    - "blockchain"
+    - "crypto"
+    - "zero-knowledge proof"
+    - "secure multiparty computation"
+    - "consensus protocol"
+    - "tokenomics"
   
   # How many days back to search
   days_back: 1
